@@ -99,7 +99,7 @@ public class PasswordValidator {
             errorMessage += "\n Your password cannot contain your username.";
         }
 
-        if(newPassword.equals(currentPassword)){
+        if(newPassword.equals(oldPassword)){
             valid = false;
             errorMessage += "\n Your password must be different from your current password.";
         }
